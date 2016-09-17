@@ -4,7 +4,7 @@
  - Validation
  - Auth
 
-Composer ашиглан тооцоолуур дээрээ суулгана. 
+Composer ашиглан тооцоолуур дээрээ суулгана. Яг laravel/installer шиг.
 
 ```
 composer global require selmonal/laravel-mn
@@ -12,7 +12,7 @@ composer global require selmonal/laravel-mn
 
 ## Ашиглалт
 
-Ларавел шинэ төсөл үүсгэсэн төсөл рүүгээ орно. Тэгээд дээр суурьлуулсан орчуулагчаа ажиллуулна.
+Ларавел төсөлрүүгээ ороод дээр суурьлуулсан орчуулагчаа ажиллуулна.
 
 ```
 laravel new example
