@@ -17,6 +17,7 @@ composer global require selmonal/laravel-mn
 ```
 laravel new example
 cd example
+
 laravelmn translate
 ```
 
