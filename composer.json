@@ -19,6 +19,6 @@
         "symfony/filesystem": "~2.3|~3.0"
     },
     "bin": [
-        "laravelmn"
+        "laravel-mn"
     ]
 }
