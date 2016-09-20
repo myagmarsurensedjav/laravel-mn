@@ -1,4 +1,4 @@
-# Laravel Mongolia [5.2|5.3]
+# Laravel Mongolia [5.*]
 
 Шинээр үүсгэсэн Ларавел төслийг Монгол хэл дээр болгоно. 
  - Validation
