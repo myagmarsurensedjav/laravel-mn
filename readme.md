@@ -18,12 +18,12 @@ composer global require selmonal/laravel-mn
 laravel new example
 cd example
 
-laravelmn translate
+laravel-mn translate
 ```
 
 Хэрэв make:auth ийг ашигласан бол дараах сонголтыг нэмж ажиллуулна.
 
 ```
-laravelmn translate --with-auth
+laravel-mn translate --with-auth
 ```
 

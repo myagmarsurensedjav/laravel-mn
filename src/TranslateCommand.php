@@ -37,13 +37,13 @@ class TranslateCommand extends Command
         if ($input->getOption('with-auth')) {
             $this->copy(
                 __DIR__ . '/stubs/views',
-                getcwd() . '/resources'
+                getcwd() . '/resources/views'
             );
         }
 
         $this->copy(
             __DIR__ . '/stubs/lang/mn',
-            getcwd() . '/resources/lang'
+            getcwd() . '/resources/lang/mn'
         );
 
         $this->updateConfig();
@@ -58,7 +58,22 @@ class TranslateCommand extends Command
      */
     public function copy($from, $to)
     {
-        system("cp -r {$from} {$to}");
+        $dir = opendir($from); 
+
+        @mkdir($to); 
+
+        while(false !== ( $file = readdir($dir)) ) { 
+            if ($file != '.' && $file != '..') { 
+                if ( is_dir($from . '/' . $file) ) { 
+                    $this->copy($from . '/' . $file, $to . '/' . $file); 
+                } 
+                else { 
+                    copy($from . '/' . $file, $to . '/' . $file); 
+                } 
+            } 
+        }
+
+        closedir($dir); 
     }
 
     /**
