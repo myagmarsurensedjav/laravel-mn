@@ -1,10 +1,10 @@
+![Laravel Mongolia](http://s22.postimg.org/mtn77ds8x/h_XXQ0_CQm_Gj.gif "Laravel Mongolia")
+
 # Laravel Mongolia [5.*]
 
 Шинээр үүсгэсэн Ларавел төслийг Монгол хэл дээр болгоно. 
  - Validation
  - Auth
-
-![Laravel Mongolia](http://s22.postimg.org/mtn77ds8x/h_XXQ0_CQm_Gj.gif "Laravel Mongolia")
 
 Composer ашиглан тооцоолуур дээрээ суулгана. Яг laravel/installer шиг.
 
