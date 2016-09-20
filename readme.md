@@ -4,6 +4,8 @@
  - Validation
  - Auth
 
+![Laravel Mongolia](http://s22.postimg.org/mtn77ds8x/h_XXQ0_CQm_Gj.gif "Laravel Mongolia")
+
 Composer ашиглан тооцоолуур дээрээ суулгана. Яг laravel/installer шиг.
 
 ```
