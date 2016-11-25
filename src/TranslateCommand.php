@@ -6,7 +6,6 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Filesystem\Filesystem;
 
 class TranslateCommand extends Command
 {
@@ -26,8 +25,9 @@ class TranslateCommand extends Command
     /**
      * Execute the command.
      *
-     * @param  InputInterface  $input
-     * @param  OutputInterface  $output
+     * @param InputInterface  $input
+     * @param OutputInterface $output
+     *
      * @return void
      */
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -36,14 +36,14 @@ class TranslateCommand extends Command
 
         if ($input->getOption('with-auth')) {
             $this->copy(
-                __DIR__ . '/stubs/views',
-                getcwd() . '/resources/views'
+                __DIR__.'/stubs/views',
+                getcwd().'/resources/views'
             );
         }
 
         $this->copy(
-            __DIR__ . '/stubs/lang/mn',
-            getcwd() . '/resources/lang/mn'
+            __DIR__.'/stubs/lang/mn',
+            getcwd().'/resources/lang/mn'
         );
 
         $this->updateConfig();
@@ -52,41 +52,41 @@ class TranslateCommand extends Command
     }
 
     /**
-     * @param  string $from
-     * @param  string $to
+     * @param string $from
+     * @param string $to
+     *
      * @return void
      */
     public function copy($from, $to)
     {
-        $dir = opendir($from); 
+        $dir = opendir($from);
 
-        @mkdir($to); 
+        @mkdir($to);
 
-        while(false !== ( $file = readdir($dir)) ) { 
-            if ($file != '.' && $file != '..') { 
-                if ( is_dir($from . '/' . $file) ) { 
-                    $this->copy($from . '/' . $file, $to . '/' . $file); 
-                } 
-                else { 
-                    copy($from . '/' . $file, $to . '/' . $file); 
-                } 
-            } 
+        while (false !== ($file = readdir($dir))) {
+            if ($file != '.' && $file != '..') {
+                if (is_dir($from.'/'.$file)) {
+                    $this->copy($from.'/'.$file, $to.'/'.$file);
+                } else {
+                    copy($from.'/'.$file, $to.'/'.$file);
+                }
+            }
         }
 
-        closedir($dir); 
+        closedir($dir);
     }
 
     /**
      * Set locale config to mn.
-     * 
+     *
      * @return void
      */
     public function updateConfig()
     {
-        $appConfigFileContent = file_get_contents(getcwd() . '/config/app.php');
+        $appConfigFileContent = file_get_contents(getcwd().'/config/app.php');
 
         $appConfigFileContent = str_replace("'locale' => 'en'", "'locale' => 'mn'", $appConfigFileContent);
 
-        file_put_contents(getcwd() . '/config/app.php', $appConfigFileContent);
+        file_put_contents(getcwd().'/config/app.php', $appConfigFileContent);
     }
 }
