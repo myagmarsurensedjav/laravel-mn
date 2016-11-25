@@ -113,17 +113,17 @@ return [
     */
 
     'attributes' => [
-        'first_name' => 'Нэр',
-        'last_name' => 'Овог',
-        'email' => 'И-мэйл',
-        'start' => 'Эхлэх',
-        'end' => 'Дуусах',
-        'price' => 'Үнэ',
-        'amount' => 'Дүн',
-        'gender' => 'Хүйс',
-        'photo' => 'Зураг',
-        'address1' => 'Хаяг 1',
-        'address2' => 'Хаяг 2',
+        'first_name'  => 'Нэр',
+        'last_name'   => 'Овог',
+        'email'       => 'И-мэйл',
+        'start'       => 'Эхлэх',
+        'end'         => 'Дуусах',
+        'price'       => 'Үнэ',
+        'amount'      => 'Дүн',
+        'gender'      => 'Хүйс',
+        'photo'       => 'Зураг',
+        'address1'    => 'Хаяг 1',
+        'address2'    => 'Хаяг 2',
         'category_id' => 'Төрөл',
     ],
 
