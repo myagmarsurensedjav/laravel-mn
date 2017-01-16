@@ -125,7 +125,7 @@ return [
         'address1'    => 'хаяг 1',
         'address2'    => 'хаяг 2',
         'category_id' => 'төрөл',
-        'password' => 'нууц үг'
+        'password'    => 'нууц үг',
     ],
 
 ];
