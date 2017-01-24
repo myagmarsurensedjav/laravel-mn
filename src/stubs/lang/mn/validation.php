@@ -16,11 +16,13 @@ return [
     'accepted'             => ':Attribute баталсан байх шаардлагатай.',
     'active_url'           => ':Attribute талбарт зөв URL хаяг оруулна уу.',
     'after'                => ':Attribute талбарт :date-с хойш огноо оруулна уу.',
+    'after_or_equal'       => ':Attribute талбарт :date эсвэл түүнээс хойш огноо оруулна уу.',
     'alpha'                => ':Attribute талбарт латин үсэг оруулна уу.',
     'alpha_dash'           => ':Attribute талбарт латин үсэг, тоо болон зураас оруулах боломжтой.',
     'alpha_num'            => ':Attribute талбарт латин үсэг болон тоо оруулах боломжтой.',
     'array'                => ':Attribute талбар массив байх шаардлагатай.',
     'before'               => ':Attribute талбарт :date-с өмнөх огноо оруулна уу.',
+    'before_or_equal'      => ':attribute талбарт :date эсвэл түүнээс өмнөх огноо оруулна уу.',
     'between'              => [
         'numeric' => ':Attribute талбарт :min-:max хооронд тоо оруулна уу.',
         'file'    => ':Attribute талбарт :min-:max килобайт хэмжээтэй файл оруулна уу.',
